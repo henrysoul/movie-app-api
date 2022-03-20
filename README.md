@@ -1,8 +1,8 @@
-About movie app api
+### About movie app api
 
 movie app api handles the logiic of creation  update and delete of movie list built on laravel 8 ,php version 8
 
-Requirements
+### Requirements
 PHP 8 and above and larevel 8
 
 Installation process
@@ -14,14 +14,14 @@ genetrate app key if necessary
 run migrations
 Start the app
 
-Api docs
+### Api docs
 
 All routes except /login are protected 
 
 baseUrl is the url of where the app is served
 e.g http://127.0.0.1:7000/api/
 
-Signup
+### Signup
 POST  baseUrl/register
 
 payload
@@ -34,7 +34,7 @@ payload
 }
 <code>
 
-Login
+### Login
 POST  baseUrl/login
 payload
 <code>
@@ -49,7 +49,7 @@ All routes except login and register are protected token is generated on login
 Add  bearer token to header
 
 
-Add movie to list
+### Add movie to list
 POST  baseUrl/movie/create
 payload
 <code>
@@ -62,7 +62,7 @@ payload
 }
 <code>
 
-Update movie
+### Update movie
 POST  baseUrl/movie/update
 payload
 <code>
@@ -76,5 +76,10 @@ payload
 
 }
 
-Delete movie
+### Delete movie
 GET  baseUrl/movie/delete/{movieId}
+
+### Get user movie list
+
+GET baseUrl/movie/list
+
