@@ -49,9 +49,9 @@ class MovieController extends Controller
     {
         // validate request
         $validation = Validator::make($request->all(), [
-            'title' => ['required'],
-            'year' => ['required'],
-            'backdrop_path' => ['required'],
+            'title' => ['nullable'],
+            'year' => ['nullable'],
+            'backdrop_path' => ['nullable'],
             'comment' => ['nullable'],
             'genre' => ['nullable'],
             'movie_id' => ['required'],
