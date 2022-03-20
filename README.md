@@ -3,23 +3,23 @@ About movie app api
 <h4>movie app api handles the logiic of creation  update and delete of movie list built on laravel 8 ,php version 8</h4>
 
 <p>Requirements</p>
-<ol>PHP 8 and above and larevel 8</ol>
+<p>PHP 8 and above and larevel 8</p>
 
 <p>Installation process</p>
 
-<ol>Clone the repository</ol>
-<ol>Run composer update</ol>
-<ol>create .env in the root directory  copy contents from .env.example to your .env</ol>
-<ol>genetrate app key if necessary</ol>
-<ol>run migrations</ol>
-<ol>Start the app</ol>
+<p>Clone the repository</p>
+<p>Run composer update</p>
+<p>create .env in the root directory  copy contents from .env.example to your .env</p>
+<p>genetrate app key if necessary</p>
+<p>run migrations</p>
+<p>Start the app</p>
 
 <h1>Api docs<h1>
 
 All routes except /login are protected 
 
-<ol>baseUrl is the url of where the app is served
-e.g http://127.0.0.1:7000/api/</ol>
+<p>baseUrl is the url of where the app is served
+e.g http://127.0.0.1:7000/api/</p>
 
 <h4>Signup</h4>
 POST  baseUrl/register
@@ -45,9 +45,9 @@ payload
 <code>
 
 <h3>All routes except login and register are protected token is generated on login</h3>
-<ol>
+<p>
 Add  bearer token to header
-</ol>
+</p>
 
 <h4>Add movie to list</h4>
 POST  baseUrl/movie/create
