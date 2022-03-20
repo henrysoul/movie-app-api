@@ -1,27 +1,27 @@
 About movie app api
 
-<h4>movie app api handles the logiic of creation  update and delete of movie list built on laravel 8 ,php version 8</h4>
+movie app api handles the logiic of creation  update and delete of movie list built on laravel 8 ,php version 8
 
-<p>Requirements</p>
-<p>PHP 8 and above and larevel 8</p>
+Requirements
+PHP 8 and above and larevel 8
 
-<p>Installation process</p>
+Installation process
 
-<p>Clone the repository</p>
-<p>Run composer update</p>
-<p>create .env in the root directory  copy contents from .env.example to your .env</p>
-<p>genetrate app key if necessary</p>
-<p>run migrations</p>
-<p>Start the app</p>
+Clone the repository
+Run composer update
+create .env in the root directory  copy contents from .env.example to your .env
+genetrate app key if necessary
+run migrations
+Start the app
 
-<h1>Api docs<h1>
+Api docs
 
 All routes except /login are protected 
 
-<p>baseUrl is the url of where the app is served
-e.g http://127.0.0.1:7000/api/</p>
+baseUrl is the url of where the app is served
+e.g http://127.0.0.1:7000/api/
 
-<h4>Signup</h4>
+Signup
 POST  baseUrl/register
 
 payload
@@ -34,7 +34,7 @@ payload
 }
 <code>
 
-<h4>Login</h4>
+Login
 POST  baseUrl/login
 payload
 <code>
@@ -44,12 +44,12 @@ payload
 }
 <code>
 
-<h3>All routes except login and register are protected token is generated on login</h3>
-<p>
-Add  bearer token to header
-</p>
+All routes except login and register are protected token is generated on login
 
-<h4>Add movie to list</h4>
+Add  bearer token to header
+
+
+Add movie to list
 POST  baseUrl/movie/create
 payload
 <code>
@@ -62,7 +62,7 @@ payload
 }
 <code>
 
-<h4>Update movie</h4>
+Update movie
 POST  baseUrl/movie/update
 payload
 <code>
@@ -76,5 +76,5 @@ payload
 
 }
 
-<h4>Delete movie</h4>
+Delete movie
 GET  baseUrl/movie/delete/{movieId}
